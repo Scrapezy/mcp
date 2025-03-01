@@ -1,0 +1,39 @@
+{
+  "name": "@scrapezy/mcp",
+  "version": "0.1.0",
+  "description": "A Model Context Protocol server for Scrapezy",
+  "author": "Scrapezy <support@scrapezy.com>",
+  "repository": {
+    "url": "https://github.com/Scrapezy/mcp"
+  },
+  "type": "module",
+  "bin": {
+    "scrapezy-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/index.js",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', '755')\"",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "scrapezy"
+  ]
+}
