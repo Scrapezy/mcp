@@ -1,6 +1,6 @@
 {
   "name": "@scrapezy/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Model Context Protocol server for Scrapezy",
   "author": "Scrapezy <support@scrapezy.com>",
   "repository": {

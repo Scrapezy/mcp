@@ -39,7 +39,7 @@ function getScrapezyApiKey(): string {
 const server = new McpServer(
   {
     name: "scrapezy-mcp-server",
-    version: "0.1.0",
+    version: "0.1.1",
   }
 );
 

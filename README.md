@@ -1,51 +1,22 @@
-# scrapezy-mcp-server MCP Server
+# @scrapezy/mcp MCP Server
 
-A Model Context Protocol server for Scrapezy API
-
-This MCP server provides tools to extract structured data from websites using Scrapezy's API.
+A Model Context Protocol server for [Scrapezy](https://scrapezy.com) that enables AI models to extract structured data from websites.
 
 ## Features
 
-### Resources
-- List and access notes via `note://` URIs
-- Each note has a title, content and metadata
-- Plain text mime type for simple content access
-
 ### Tools
-- `create_note` - Create new text notes
-  - Takes title and content as required parameters
-  - Stores note in server state
-- `extract-structured-data` - Extract structured data from a website
+- `extract_structured_data` - Extract structured data from a website
   - Takes URL and prompt as required parameters
-  - Handles the asynchronous job workflow automatically:
-    1. Submits the extraction job to Scrapezy API
-    2. Polls the API for job completion (with timeout)
-    3. Returns the structured data as JSON text when complete
+  - Returns structured data extracted from the website based on the prompt
   - The prompt should clearly describe what data to extract from the website
 
-## Development
+## Installation
 
-Install dependencies:
-```bash
-npm install
-```
-
-Build the server:
-```bash
-npm run build
-```
-
-For development with auto-rebuild:
-```bash
-npm run watch
-```
-
-## Installation and Usage
-
-Install the package:
 ```bash
 npm install -g @scrapezy/mcp
 ```
+
+## Usage
 
 ### API Key Setup
 
@@ -70,7 +41,7 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 ```json
 {
   "mcpServers": {
-    "scrapezy-mcp-server": {
+    "scrapezy": {
       "command": "npx @scrapezy/mcp --api-key=your_api_key"
     }
   }
@@ -97,3 +68,7 @@ npm run inspector
 ```
 
 The Inspector will provide a URL to access debugging tools in your browser.
+
+## License
+
+MIT
