@@ -1,5 +1,7 @@
 # @scrapezy/mcp MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@Scrapezy/mcp)](https://smithery.ai/server/@Scrapezy/mcp)
+
 A Model Context Protocol server for [Scrapezy](https://scrapezy.com) that enables AI models to extract structured data from websites.
 
 ## Features
@@ -12,6 +14,15 @@ A Model Context Protocol server for [Scrapezy](https://scrapezy.com) that enable
 
 ## Installation
 
+### Installing via Smithery
+
+To install Scrapezy MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Scrapezy/mcp):
+
+```bash
+npx -y @smithery/cli install @Scrapezy/mcp --client claude
+```
+
+### Manual Installation
 ```bash
 npm install -g @scrapezy/mcp
 ```
