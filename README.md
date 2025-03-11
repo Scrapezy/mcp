@@ -1,5 +1,9 @@
 # @scrapezy/mcp MCP Server
 
+<a href="https://glama.ai/mcp/servers/rnktqsouvy">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/rnktqsouvy/badge" alt="Scrapezy MCP server" />
+</a>
+
 [![smithery badge](https://smithery.ai/badge/@Scrapezy/mcp)](https://smithery.ai/server/@Scrapezy/mcp)
 
 A Model Context Protocol server for [Scrapezy](https://scrapezy.com) that enables AI models to extract structured data from websites.
